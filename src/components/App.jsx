@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 import background from '../image/Homepage_Capstone.jpg';
+import NavBar from './NavBar/NavBar';
+import { Button } from 'react-bootstrap';
+
+
+
 
 class App extends Component {
     constructor(props){
@@ -11,12 +16,44 @@ class App extends Component {
     render(){
         return (
             <div>
-                <div style={{ backgroundImage: `url(${background})` }}>
-            Bucketlist!
+                <div 
+                    style={{ 
+                        backgroundImage: `url(${background})`,
+                        backgroundRepeat: "no repeat",
+                        backgroundSize: "cover",
+                        position: "absolute",
+                        height: "100vh",
+                        width: "100vw",
+                    
+                    
+                    }}
+                >
+                    <div className="container-fluid">
+                        <NavBar />
+                    </div>
 
+                    <div class= "body">
 
-            <h1>Our React App from a Component File</h1>
-                
+                        <body>
+                            <h1>An Amazing Tagline or Website Name</h1>
+                        </body>
+                            
+                            <form>
+                            <Button>See Adventures!</Button>
+                            </form>
+                            <div className="col-md-6">
+                            <form>
+                            <Button>Create Your List!</Button>
+                            </form>
+                            </div>
+                            <div className="col-md-6">
+
+                            <form>
+                            <Button>Click to view Adventure Companies</Button>
+                            </form>
+                            </div>
+                    </div>
+    
                 </div>
             </div>        
                 
