@@ -3,16 +3,38 @@ import './App.css';
 import background from '../image/Homepage_Capstone.jpg';
 import NavBar from './NavBar/NavBar';
 import { Button } from 'react-bootstrap';
+import axios from 'axios';
 
 
+//axios call setup ??
+//Re-route and switch in render??
 
 
 class App extends Component {
     constructor(props){
         super(props);
-        this.state = {};
+        this.state = {
+            allTrips:[]
+
+
+
+        };
     }
     
+    getAllAdventures= async ()=>{
+        let response= await axios.get('http://127.0.0.1:8000/api/adventures/all/')
+        console.log(response.data)
+        this.setState({
+            allTrips : response.data
+        })
+    }
+
+    componentDidMount(){
+        this.getAllAdventures()
+    }
+
+
+
     render(){
         return (
             <div>
@@ -32,7 +54,11 @@ class App extends Component {
                         <NavBar />
                     </div>
 
+                    
+
                     <div class= "body">
+                        
+
 
                         <body>
                             <h1>An Amazing Tagline or Website Name</h1>
@@ -53,7 +79,12 @@ class App extends Component {
                             </form>
                             </div>
                     </div>
-    
+                    {this.state.allTrips.map(trip =>
+                                        <div>
+                                            <div>{trip.location}</div>
+                                            <div>{trip.price}</div>
+                                        </div>
+                                        )}
                 </div>
             </div>        
                 
