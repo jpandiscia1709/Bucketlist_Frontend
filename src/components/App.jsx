@@ -6,6 +6,9 @@ import { Button } from "react-bootstrap";
 import axios from "axios";
 import SeeAdventures from "./SeeAdventures/SeeAdventures";
 import SeeCompanies from "./SeeCompanies/SeeCompanies";
+import { Route, Routes } from 'react-router-dom';
+import CommunityLogo from "../image/CommunityLogo.jpg";
+
 
 //axios call setup ??
 //Re-route and switch in render??
@@ -51,28 +54,36 @@ class App extends Component {
             <body>
               <h1>An Amazing Tagline or Website Name</h1>
             </body>
-            <div>
-                <form>
-                <Button>See Adventures!</Button>
-                </form>
-                            {/* <div className="col-md-6"> */} 
-                                {/* <form>
-                                    <Button>Create Your List!</Button>
-                                    </form> */}
-            </div>
-                                {/* <div className="col-md-6"> */}
-                                {/* </div> */}
-            <div>
-                    <SeeAdventures />
-              <form>
-                <Button>Click to view Adventure Companies</Button>
-              </form>
-                    <SeeCompanies />
+                <div>
+                <main>
+                        <h2>See Adventures!</h2>
+                        <Button>Click to view Adventure Companies</Button>
+                        <div>
+                            <img src={CommunityLogo} alt="picture board" width="200" height="200" 
+                         style={{
+                            position: 'absolute',
+                            right: 5,
+                            top: 1,}}/>
+                        </div>
+                    <Routes>
+                        <Route path='/adventures' element={<SeeAdventures />} />
+                
+                        <Route path='/company' element={<SeeCompanies />} />
+                
+                    </Routes>
+                </main>
+                               
+                                        {/* <div>
+                                            <SeeAdventures />
+                                    <form>
+                                    </form>
+                                            <SeeCompanies />
+                                        </div> */}
                 </div>
-            ))} */}
-          </div>
+            </div>
         </div>
-      </div>
+        </div>   
+      
     );
   }
 }
