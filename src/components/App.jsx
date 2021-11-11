@@ -51,22 +51,22 @@ class App extends Component {
             <body>
               <h1>An Amazing Tagline or Website Name</h1>
             </body>
-
-            <form>
-              <Button>See Adventures!</Button>
-            </form>
-            <div className="col-md-6">
-              <form>
-                <Button>Create Your List!</Button>
-              </form>
+            <div>
+                <form>
+                <Button>See Adventures!</Button>
+                </form>
+                            {/* <div className="col-md-6"> */} 
+                                {/* <form>
+                                    <Button>Create Your List!</Button>
+                                    </form> */}
             </div>
-            <div className="col-md-6">
+                                {/* <div className="col-md-6"> */}
+                                {/* </div> */}
+            <div>
+                    <SeeAdventures />
               <form>
                 <Button>Click to view Adventure Companies</Button>
               </form>
-            </div>
-                <div>
-                    <SeeAdventures />
                     <SeeCompanies />
                 </div>
             ))} */}

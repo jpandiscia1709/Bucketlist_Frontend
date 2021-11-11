@@ -29,6 +29,7 @@ class SeeAdventures extends Component {
         {this.state.allTrips.map((trip) => (
           <div>
             <div>
+              {trip.name}   
               {trip.location}
               {trip.price}
             </div>
