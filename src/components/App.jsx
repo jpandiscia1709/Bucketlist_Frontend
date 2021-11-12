@@ -6,8 +6,10 @@ import { Button } from "react-bootstrap";
 import axios from "axios";
 import SeeAdventures from "./SeeAdventures/SeeAdventures";
 import SeeCompanies from "./SeeCompanies/SeeCompanies";
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import CommunityLogo from "../image/CommunityLogo.jpg";
+import SeeAllAdventures from "../pages/SeeAllAdventures";
+
 
 
 //axios call setup ??
@@ -66,9 +68,9 @@ class App extends Component {
                             top: 1,}}/>
                         </div>
                     <Routes>
-                        <Route path='/adventures' element={<SeeAdventures />} />
-                
-                        <Route path='/company' element={<SeeCompanies />} />
+                        <Route path="/" elemnet={<Navigate to="/seealladventures" />} />
+                        <Route path='/seealladventures' element={<SeeAllAdventures />} />
+                        <Route path='/seecompany' element={<SeeCompanies />} />
                 
                     </Routes>
                 </main>
