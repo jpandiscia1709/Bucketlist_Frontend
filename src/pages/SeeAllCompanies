@@ -1,0 +1,14 @@
+import { Routes, Route } from "react-router-dom";
+import SeeCompanies from "../components/SeeCompanies/SeeCompanies";
+
+const SeeAllCompanies = () => {
+  return (
+    <section>
+      <h1>Great Companies!</h1>
+      <SeeCompanies />
+      <div>And Other Things</div>
+    </section>
+  );
+};
+
+export default SeeAllCompanies;

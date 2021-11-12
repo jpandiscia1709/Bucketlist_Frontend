@@ -1,15 +1,12 @@
 import { Routes, Route } from "react-router-dom";
+import SeeAdventures from "../components/SeeAdventures/SeeAdventures";
 
 const SeeAllAdventures = () => {
   return (
     <section>
       <h1>Adventure Awaits!</h1>
-      {/* <Routes>
-        <Route
-          path="/seealladventures"
-          element={<p>Choose Your Adventure</p>}
-        ></Route>
-      </Routes> */}
+      <SeeAdventures />
+      <div>Things also on page</div>
     </section>
   );
 };
