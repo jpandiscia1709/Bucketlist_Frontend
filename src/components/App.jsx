@@ -15,25 +15,6 @@ import SeeAllCompanies from "../pages/SeeAllCompanies";
 //Re-route and switch in render??
 
 class App extends Component {
-  //   constructor(props) {
-  //     super(props);
-  //     this.state = {
-  //       allTrips: [],
-  //     };
-  //   }
-
-  //   getAllAdventures = async () => {
-  //     let response = await axios.get("http://127.0.0.1:8000/api/adventures/all/");
-  //     console.log(response.data);
-  //     this.setState({
-  //       allTrips: response.data,
-  //     });
-  //   };
-
-  //   componentDidMount() {
-  //     this.getAllAdventures();
-  //   }
-
   render() {
     return (
       <div>
@@ -59,12 +40,12 @@ class App extends Component {
               <main>
                 <h2>Find Your Adventure!</h2>
                 <Link to="/seealladventures">
-                  <Button>See Trips</Button>
+                  <button className="button1">See Trips</button>
                 </Link>
                 <div>
-                <Link to="/seecompany">
-                  <Button>Your Hosts</Button>
-                </Link>
+                  <Link to="/seecompany">
+                    <button>Your Hosts</button>
+                  </Link>
                 </div>
                 <div>
                   <img
@@ -72,11 +53,7 @@ class App extends Component {
                     alt="picture board"
                     width="200"
                     height="200"
-                    style={{
-                      position: "absolute",
-                      right: 5,
-                      top: 1,
-                    }}
+                    className="imgClass"
                   />
                 </div>
                 <Routes>
@@ -88,13 +65,6 @@ class App extends Component {
                   <Route path="/seecompany" element={<SeeCompanies />} />
                 </Routes>
               </main>
-
-              {/* <div>
-                                            <SeeAdventures />
-                                    <form>
-                                    </form>
-                                            <SeeCompanies />
-                                        </div> */}
             </div>
           </div>
         </div>

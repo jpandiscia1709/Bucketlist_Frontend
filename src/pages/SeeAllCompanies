@@ -5,7 +5,7 @@ const SeeAllCompanies = () => {
   return (
     <section>
       <h1>Great Companies!</h1>
-      <SeeCompanies />
+        <SeeCompanies />
       <div>And Other Things</div>
     </section>
   );
