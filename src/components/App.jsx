@@ -47,23 +47,32 @@ class App extends Component {
                     <button>Your Hosts</button>
                   </Link>
                 </div>
+                    <div>
+                            
+                        <div class="container">
+                            <img
+                                src={CommunityLogo}
+                                alt="picture board"
+                                width="200"
+                                height="200"
+                                //className="imgClass"
+                                
+                                />
+                            <button class="btn">Join the Community!</button>
+                                   
+                        </div>
+                    </div>
                 <div>
-                  <img
-                    src={CommunityLogo}
-                    alt="picture board"
-                    width="200"
-                    height="200"
-                    className="imgClass"
-                  />
-                </div>
                 <Routes>
                   {/* <Route path="/" elemnet={<Navigate to="/seealladventures" />} /> */}
+                
                   <Route
                     path="/seealladventures"
                     element={<SeeAllAdventures />}
                   />
                   <Route path="/seecompany" element={<SeeCompanies />} />
                 </Routes>
+                </div>
               </main>
             </div>
           </div>

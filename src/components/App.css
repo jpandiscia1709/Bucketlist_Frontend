@@ -17,40 +17,129 @@ App .col-align {
 
 .body {
   background-color: transparent;
-  color: white;
+  color: rgb(30, 230, 20);
   padding: 40px;
-  font-family: Arial;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: large;
   text-align: center;
 }
 
 .imgClass {
+  
   position: "absolute";
   right: 5;
   top: 1;
   float: right;
+  
 }
+
+
+.h3 {
+  float: right;
+}
+
+* {box-sizing: border-box}
+
+.container {
+  position: relative;
+  width: 25%;
+  max-width: 400px;
+}
+
+.container img {
+  width: 25%;
+  height: auto;
+  float: right;
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 86%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgb(58, 10, 248);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+  
+.container .btn:hover {
+  background-color: rgb(66, 12, 137);
+}
+
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  float: right;
+} */
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 50%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .button1 {
   display: inline-block;
   padding: 0.35em 1.2em;
-  border: 0.1em solid #ffffff;
+  border: 0.1em solid #190ccc;
   margin: 0 0.3em 0.3em 0;
   border-radius: 0.12em;
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  color: #ffffff;
+  color: #141212;
   text-align: center;
   transition: all 0.2s;
 }
-.button1:hover {
+ /* .button1:hover {
   color: #000000;
-  background-color: #ffffff;
-}
+  background-color: #5b12bb;
+} 
 @media all and (max-width: 30em) {
   .button1 {
     display: block;
     margin: 0.4em auto;
   }
-}
+} */
