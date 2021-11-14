@@ -40,10 +40,10 @@ class App extends Component {
               <main>
                 <h2>Find Your Adventure!</h2>
                 <Link to="/seealladventures">
-                  <button className="button1">See Trips</button>
+                  <button class="button">See Trips</button>
                 </Link>
                 <div>
-                  <Link to="/seecompany">
+                 <Link to="/seecompany">
                     <button>Your Hosts</button>
                   </Link>
                 </div>

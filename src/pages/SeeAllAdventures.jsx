@@ -5,6 +5,7 @@ const SeeAllAdventures = () => {
   return (
     <section>
       <h1>Adventure Awaits!</h1>
+      
         <SeeAdventures />
       <div>Things also on page</div>
     </section>
