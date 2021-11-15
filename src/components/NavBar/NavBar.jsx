@@ -11,7 +11,7 @@ function NavBar(props) {
         return(
             <Navbar bg="light" collapseOnSelect expand="lg">
             <Container>
-                <Navbar.Brand href="#home">Website Name</Navbar.Brand>
+                <Navbar.Brand href="#home">Learn New Skills!</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">

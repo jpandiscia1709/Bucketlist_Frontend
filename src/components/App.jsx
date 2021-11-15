@@ -34,11 +34,12 @@ class App extends Component {
 
           <div class="body">
             <body>
-              <h1>An Amazing Tagline or Website Name</h1>
+              <h1>AdventureTogether</h1>
+              
             </body>
             <div>
               <main>
-                <h2>Find Your Adventure!</h2>
+                <h2>Explore! Grow! Thrive!</h2>
                 <Link to="/seealladventures">
                   <button class="button">See Trips</button>
                 </Link>
@@ -58,7 +59,7 @@ class App extends Component {
                                 //className="imgClass"
                                 
                                 />
-                            <button class="btn">Join the Community!</button>
+                            <button class="btn">Find Your Tribe!</button>
                                    
                         </div>
                     </div>
